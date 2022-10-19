@@ -1,0 +1,114 @@
+.Landing{
+    width: 100%;
+ }
+ .landing-info{
+     padding: 50px;
+     width:60%;
+ }
+ .landing-info span{
+     color: aqua;
+ }
+ .myName{
+     font-size: 50px;
+     color: #ccd6f6;
+     margin: 10px 0px;
+     -webkit-animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+     animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+ }
+ @-webkit-keyframes tracking-in-contract {
+        0% {
+          letter-spacing: 1em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          letter-spacing: normal;
+          opacity: 1;
+        }
+      }
+      @keyframes tracking-in-contract {
+        0% {
+          letter-spacing: 1em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          letter-spacing: normal;
+          opacity: 1;
+        }
+      }
+ .myProf{
+     font-size: 1.2em;
+     color: #8892b0;
+     line-height: 1.4em;
+     margin: 30px 0;
+ }
+ .myInfo p{
+     width: 50%;
+     font-size: 15px;
+     color: #8892b0;
+ }
+ .landing-img{
+     width: 40%;
+     padding: 50px;
+
+ }
+ .lan-img{
+     width: 80%;
+     position: relative;
+     -webkit-animation: lan-img 0.7s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+     animation: lan-img 0.7s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+ }
+ @-webkit-keyframes lan-img {
+    0% {
+      -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+              transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 0% 50%;
+              transform-origin: 0% 50%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes lan-img {
+    0% {
+      -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+              transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 0% 50%;
+              transform-origin: 0% 50%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+ .lan-img::before{
+     content: "";
+     width: 100px;
+     height: 100px;
+     background-color: aqua;
+     position: absolute;
+     left: -50px;
+ }
